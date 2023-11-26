@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <div className="top-notice">
-        We're adding new stuff and updating our Menu that's why may you find
-        some features not working.
+        We're adding new stuff and updating our Menu that's why you may find
+        some features are not working.
       </div>
       <header>
         <div className="menuButton">
