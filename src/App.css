@@ -1,38 +1,273 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+
+.top-notice {
+  background-color: red;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.8rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  /* position: absolute;
+  top: 2rem;
+  right: 2rem; */
+  width: 12%;
+  min-width: 140px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo>img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuButton {
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: all 300ms;
+}
+
+.menuButton:hover {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+
+.menuButton:active {
+  background-color: rgb(94, 94, 94);
+}
+
+button {
+  background-color: white;
+  color: red;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: 1px solid red;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: rgb(255, 96, 96);
+  transform: scale(1);
+}
+
+button.secondary {
+  background-color: red;
+  color: white;
+}
+
+div.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  height: calc(100vh - 150px);
+}
+
+.main>h1 {
+  font-family: "Lugrasimo";
+  color: red;
+  border-bottom: 4px solid red;
+  margin-bottom: 0px;
+}
+
+.main>p {
+  color: rgb(136, 136, 136);
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.main>p>b {
+  color: rgb(94, 94, 94);
+  font-weight: 900;
+}
+
+.services {
+  background-color: red;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.service {
+  max-width: 300px;
+  padding: 1rem;
+  margin: 1rem;
+  transition: all 300ms;
+}
+
+.service>.icon {
+  font-size: 5rem;
+}
+
+.service>.title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1rem auto;
+}
+
+.service:hover {
+  background-color: rgb(203, 0, 0);
+  border-radius: 1rem;
+  transform: scale(1.05);
+}
+
+.speciality {
+  text-align: center;
+  margin: 2rem;
+}
+
+.speciality-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.speciality-item>img {
+  width: 70vw;
+  height: 70vw;
+  max-height: 350px;
+  max-width: 350px;
+  object-fit: cover;
+  margin: 2rem;
+  border-radius: 50%;
+  transition: all 300ms;
+}
+
+.speciality-item>img:hover {
+  transform: scale(1.1);
+}
+
+.speciality-item>h2 {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  cursor: default;
+  transition: all 400ms;
+}
+
+.speciality-item>h2:hover {
+  color: red;
+
+}
+
+.menu-homepage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  height: 80vh;
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  background: rgb(60, 60, 60);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0rem 2rem;
+  justify-content: space-around;
+
+}
+
+.footer-top>div {
+  width: 300px;
+  padding: 3rem 0rem;
+
+}
+
+footer li {
+  list-style: none;
+  margin: 10px 0px;
+  transition: all 300ms;
+  cursor: default;
+}
+
+footer li:hover {
+  color: red;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.social-links>a {
+  padding: 0.6rem;
+  background-color: rgb(100, 100, 100);
+  margin: 5px;
+  border-radius: 10%;
+
+}
+
+.social-links>a:hover {
+  background-color: rgb(136, 136, 136);
+}
+
+
+.footer-bottom {
+  padding: 2rem;
+  border-top: 1px solid rgb(100, 100, 100);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 665px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom>.social-links {
+    margin: 2rem;
   }
 }
