@@ -18,6 +18,10 @@ header {
 }
 
 
+.title {
+  font-family: 'Lugrasimo';
+}
+
 .top-notice {
   background-color: red;
   color: white;
@@ -191,7 +195,7 @@ div.main {
   justify-content: center;
   text-align: center;
   height: 80vh;
-  background-color: red;
+  background-color: rgb(44, 44, 44);
   color: white;
 }
 
@@ -209,6 +213,7 @@ footer {
 }
 
 .footer-top>div {
+
   width: 300px;
   padding: 3rem 0rem;
 
@@ -230,6 +235,8 @@ footer li:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgb(44, 44, 44);
+  padding: 2rem;
 
 }
 
@@ -246,16 +253,14 @@ footer li:hover {
 }
 
 
-.footer-bottom {
-  padding: 2rem;
-  border-top: 1px solid rgb(100, 100, 100);
-}
+
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 300;
 }
+
 
 @media only screen and (max-width: 665px) {
   .footer-top {
@@ -270,4 +275,67 @@ a {
   .footer-bottom>.social-links {
     margin: 2rem;
   }
+}
+
+
+
+.booking {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  /* align-items: center; */
+}
+
+.booking-info {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.booking-phone {
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  cursor: default;
+  transition: all 300ms;
+}
+
+.booking-phone:hover {
+  transform: scale(1.05);
+  border-radius: 1rem;
+  /* border: 5px solid black; */
+
+}
+
+.booking-input {
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+}
+
+.booking-input>input {
+  margin: 1rem 0rem;
+
+  font-size: 1.1rem;
+  /* width: 500px; */
+}
+
+input[type="date"],
+input[type="time"] {
+  min-width: 92%;
+  margin: 1rem auto;
+}
+
+
+input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+
 }

@@ -2,6 +2,7 @@ import { FiMenu } from "react-icons/fi";
 import { GiClick, GiMeal, GiHotMeal } from "react-icons/gi";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function App() {
   return (
@@ -102,7 +103,39 @@ function App() {
           be online soon
         </p>
       </div>
-      <div></div>
+      <div className="booking">
+        <div className="booking-info">
+          <h2 className="title">Fresh from Lahori</h2>
+          <h1>BOOK ONLINE</h1>
+          <p>
+            Elevate your dining experience with ease! Reserve a table at our
+            restaurant, where exquisite cuisine meets inviting ambiance. Enjoy
+            impeccable service and create memorable moments with your loved
+            ones, ensuring a delightful and unforgettable mealtime.
+          </p>
+          <a href="tel:01612493919">
+            <h1 className="booking-phone">
+              <FaPhoneAlt style={{ transform: "translateY(4px)" }} /> &nbsp;
+              0161 249 3919
+            </h1>
+          </a>
+        </div>
+        <div className="booking-input">
+          <h2>BOOK A TABLE</h2>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="number" placeholder="How Many Persons?" />
+          <input type="date" placeholder="Date" defaultValue="2023-12-18" />
+          <input
+            type="time"
+            placeholder="Time"
+            defaultValue="13:32"
+            min="13:00"
+            max="23:30"
+          />
+          <button className="secondary">Book Now!</button>
+        </div>
+      </div>
 
       <Footer />
     </div>
