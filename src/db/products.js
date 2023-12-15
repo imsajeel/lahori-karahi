@@ -24,7 +24,7 @@ const products = [
       "Rohu fish (on the bone) marinated with special gram flour & Lahori spices, deep fried in vegetable oil",
     image:
       "https://www.chilitochoc.com/wp-content/uploads/2020/09/lahori-fried-fish-3.jpg",
-    price: "18.00",
+    price: "20.00",
     category: "STARTER",
   },
   {
