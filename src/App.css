@@ -115,6 +115,15 @@ div.main {
   font-weight: 900;
 }
 
+h1.special {
+  font-size: 4rem;
+  margin: 0px;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .services {
   background-color: red;
   color: white;
@@ -188,16 +197,7 @@ div.main {
 
 }
 
-.menu-homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 80vh;
-  background-color: rgb(44, 44, 44);
-  color: white;
-}
+
 
 footer {
   background: rgb(60, 60, 60);

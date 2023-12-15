@@ -3,6 +3,7 @@ import { GiClick, GiMeal, GiHotMeal } from "react-icons/gi";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
+import MenuHome from "./components/MenuHome/MenuHome";
 
 function App() {
   return (
@@ -70,7 +71,7 @@ function App() {
       </div>
       <div className="speciality">
         <h2 className="title">Fresh from Lahori</h2>
-        <h1>OUR SPECIALITY</h1>
+        <h1 className="special">OUR SPECIALITY</h1>
         <div className="speciality-list">
           <div className="speciality-item">
             <img
@@ -96,13 +97,7 @@ function App() {
         </div>
         <button className="secondary">View More</button>
       </div>
-      <div className="menu-homepage">
-        <h1>Placeholder for Our Menu</h1>
-        <p>
-          Sorry for inconvenience, Our Menu is getting some new updates & will
-          be online soon
-        </p>
-      </div>
+      <MenuHome />
       <div className="booking">
         <div className="booking-info">
           <h2 className="title">Fresh from Lahori</h2>
