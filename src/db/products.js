@@ -43,7 +43,7 @@ const products = [
     discription:
       "Chicken minced meat mixed with authentic seasonings and herbs, Skewed on grill",
     image:
-      "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Seekh-Kebab-750x750.jpg",
+      "https://i.ibb.co/7Gq7HNw/IMG-7100.jpg",
     price: "6.00",
     category: "STARTER",
   },
@@ -90,7 +90,7 @@ const products = [
     name: "Malai Boti",
     discription: "Malai Boti marinated with our special seasonings and grilled",
     image:
-      "https://nowdelish.com/wp-content/uploads/2023/10/malai-boti-featured-3.jpg",
+      "https://i.ibb.co/5L3XVmQ/IMG-7096.jpg",
     price: "7.00",
     category: "STARTER",
   },  {
