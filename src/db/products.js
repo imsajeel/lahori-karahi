@@ -93,6 +93,14 @@ const products = [
       "https://nowdelish.com/wp-content/uploads/2023/10/malai-boti-featured-3.jpg",
     price: "7.00",
     category: "STARTER",
+  },  {
+    id: "10",
+    name: "Family Plater",
+    discription: "Chicken Wings, Lamb Chops, Lamb & Chicken Tikka, Milai Boti & Seekh Kebab",
+    image:
+      "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
+    price: "20.00",
+    category: "STARTER",
   },
   // {
   //   id: "10",
