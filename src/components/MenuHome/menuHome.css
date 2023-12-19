@@ -8,6 +8,8 @@
     /* background-color: rgb(44, 44, 44); */
     background-color: black;
     color: white;
+    /* transition: all 300ms; */
+    scroll-behavior: smooth;
 }
 
 .menu-homepage>.title {
@@ -89,4 +91,18 @@ nav>li.active {
     margin: 1rem 0rem;
     color: rgb(255, 59, 59);
     font-size: 1.5rem;
+}
+
+.loading-img {
+    max-width: 300px;
+    margin: 4rem 1rem;
+}
+
+.no-item-found {
+    margin: 3rem 1rem;
+    color: gray;
+}
+
+.no-item-found>h2 {
+    margin: 1rem 0rem;
 }

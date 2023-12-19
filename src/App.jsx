@@ -30,7 +30,9 @@ function App() {
           <b>gastronomic delights</b>. At Lahori Karahi, our experienced chefs
           from Lahore make sure they prepare <b>Authentic Lahori Food</b>
         </p>
-        <button>Our Menu</button>
+        <a href="#menu">
+          <button>Our Menu</button>
+        </a>
       </div>
       <div className="services">
         <div className="service">
@@ -95,7 +97,9 @@ function App() {
             <h2>Lahori Fish</h2>
           </div>
         </div>
-        <button className="secondary">View More</button>
+        <a href="#menu">
+          <button className="secondary">View More</button>
+        </a>
       </div>
       <MenuHome />
       <div className="booking">
