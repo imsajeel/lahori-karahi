@@ -94,15 +94,15 @@ const products = [
     price: "7.00",
     category: "STARTER",
   },
-  // {
-  //   id: "10",
-  //   name: "Chicken Karahi",
-  //   discription: "Chicken Karahi",
-  //   image:
-  //     "https://rookiewithacookie.com/wp-content/uploads/2017/01/karahi-1024x720.jpg",
-  //   price: "18.00",
-  //   category: "MAIN",
-  // },
+  {
+    id: "10",
+    name: "Chicken Karahi",
+    discription: "Chicken Karahi",
+    image:
+      "https://rookiewithacookie.com/wp-content/uploads/2017/01/karahi-1024x720.jpg",
+    price: "18.00",
+    category: "MAIN",
+  },
 ];
 
 export default products;
