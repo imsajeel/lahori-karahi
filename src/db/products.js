@@ -24,7 +24,7 @@ const products = [
       "Rohu fish (on the bone) marinated with special gram flour & Lahori spices, deep fried in vegetable oil",
     image:
       "https://www.chilitochoc.com/wp-content/uploads/2020/09/lahori-fried-fish-3.jpg",
-    price: "18.00",
+    price: "20.00",
     category: "STARTER",
   },
   {
@@ -43,7 +43,7 @@ const products = [
     discription:
       "Chicken minced meat mixed with authentic seasonings and herbs, Skewed on grill",
     image:
-      "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Seekh-Kebab-750x750.jpg",
+      "https://i.ibb.co/7Gq7HNw/IMG-7100.jpg",
     price: "6.00",
     category: "STARTER",
   },
@@ -53,7 +53,7 @@ const products = [
     discription: "Lamb Chops marinated with our special seasonings and grilled",
     image:
       "https://s23209.pcdn.co/wp-content/uploads/2023/01/121205_DD_Garlic-Rosemary-Lamb-Chops_253.jpg",
-    price: "8.00",
+    price: "9.00",
     category: "STARTER",
   },
   {
@@ -63,7 +63,7 @@ const products = [
       "Chicken Wings marinated with our special seasonings and grilled",
     image:
       "https://thewoodenskillet.com/wp-content/uploads/2021/09/grilled-chicken-wings-recipe-1.jpg",
-    price: "4.50",
+    price: "5.00",
     category: "STARTER",
   },
   {
@@ -72,7 +72,7 @@ const products = [
     discription: "Lamb Tikka marinated with our special seasonings and grilled",
     image:
       "https://www.greedygourmet.com/wp-content/uploads/2018/07/lambtikka.jpg",
-    price: "8.00",
+    price: "9.00",
     category: "STARTER",
   },
   {
@@ -82,7 +82,7 @@ const products = [
       "Chicken Tikka marinated with our special seasonings and grilled",
     image:
       "https://www.flavorquotient.com/wp-content/uploads/2020/04/Chicken-Tikka-FQ-4-1-of-1.jpg",
-    price: "7.00",
+    price: "7.50",
     category: "STARTER",
   },
   {
@@ -90,8 +90,16 @@ const products = [
     name: "Malai Boti",
     discription: "Malai Boti marinated with our special seasonings and grilled",
     image:
-      "https://nowdelish.com/wp-content/uploads/2023/10/malai-boti-featured-3.jpg",
-    price: "7.00",
+      "https://i.ibb.co/5L3XVmQ/IMG-7096.jpg",
+    price: "7.50",
+    category: "STARTER",
+  },  {
+    id: "10",
+    name: "Family Plater",
+    discription: "Chicken Wings, Lamb Chops, Lamb & Chicken Tikka, Milai Boti & Seekh Kebab",
+    image:
+      "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
+    price: "20.00",
     category: "STARTER",
   },
   {
