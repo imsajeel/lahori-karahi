@@ -339,3 +339,62 @@ input {
   background-color: white;
 
 }
+
+.lahori-image {
+  background-color: black;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.lahori-image>img {
+  width: 100%;
+  max-width: 500px;
+  /* border: 1px solid white; */
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: all 300ms;
+}
+
+.lahori-image>img:hover {
+  transform: scale(1.1);
+}
+
+.delivery-homepage {
+  text-align: center;
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delivery-homepage>img {
+  border-radius: 3rem;
+  max-width: 200px;
+  margin-top: 2rem;
+  transition: all 300ms;
+}
+
+.delivery-homepage>img:hover {
+  transform: scale(1.1);
+}
+
+.delivery-homepage>img:active {
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 665px) {
+  .lahori-image {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lahori-image>img {
+    margin-bottom: 2rem;
+  }
+}

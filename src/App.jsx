@@ -6,6 +6,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 import MenuHome from "./components/MenuHome/MenuHome";
 
 function App() {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
+
   return (
     <div className="App">
       <div className="top-notice">
@@ -101,6 +105,41 @@ function App() {
           <button className="secondary">View More</button>
         </a>
       </div>
+      <div className="lahori-image">
+        <div>
+          <h1 className="special">Find us</h1>
+          <h2 className="title">
+            824 Stockport Rd, Levenshulme <br />
+            Manchester M19 3AW <br />
+            United Kingdom
+            <br />
+            <br />
+            <br />
+            <button
+              className="secondary"
+              onClick={() =>
+                openInNewTab(
+                  "https://www.google.com/maps/dir//824+Stockport+Rd,+Levenshulme,+Manchester+M19+3AW/@53.4483304,-2.2744931,12z"
+                )
+              }
+            >
+              Get Directions
+            </button>
+          </h2>
+        </div>
+        <img src="images/background.jpeg" alt="Lahori Pic" />
+      </div>
+
+      <div className="delivery-homepage">
+        <h1 className="title">Get your meal delivered to you.</h1>
+        <img
+          src="images/fresheats.webp"
+          alt="FreshEats"
+          onClick={() =>
+            openInNewTab("https://fresh-eats.co.uk/lahori-karahi-chargha")
+          }
+        />
+      </div>
       <MenuHome />
       <div className="booking">
         <div className="booking-info">
@@ -123,6 +162,7 @@ function App() {
           <h2>BOOK A TABLE</h2>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
+          <input type="number" placeholder="Mobile Number" />
           <input type="number" placeholder="How Many Persons?" />
           <input type="date" placeholder="Date" defaultValue="2023-12-18" />
           <input
@@ -132,7 +172,7 @@ function App() {
             min="13:00"
             max="23:30"
           />
-          <button className="secondary">Book Now!</button>
+          <button className="secondary">Request Booking!</button>
         </div>
       </div>
 
