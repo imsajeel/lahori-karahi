@@ -1,9 +1,10 @@
 .menu-homepage {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
     /* background-color: rgb(44, 44, 44); */
     background-color: black;

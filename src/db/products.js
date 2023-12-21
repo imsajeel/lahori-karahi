@@ -1,3 +1,19 @@
+const productCategories = [
+  { id: "01", category: "STARTERS", title: "Starters", subCategories: [] },
+  {
+    id: "02",
+    category: "MAIN",
+    title: "Main",
+    subCategories: [
+      { subCategory: "LAMB_KARAHI", title: "Lamb Karahi per Kilo" },
+      { subCategory: "CHICKEN_KARAHI", title: "Chicken Karahi per Kilo" },
+      { subCategory: "DAILY_SPECIAL", title: "Daily Special" },
+      { subCategory: "LAHORI_SPECIAL", title: "Lahori Special" },
+      { subCategory: "CHEF_SPECIAL", title: "Chef Special" },
+    ],
+  },
+];
+
 const products = [
   {
     id: "01",
@@ -101,23 +117,108 @@ const products = [
     price: "20.00",
     category: "STARTERS",
   },
+  // {
+  //   id: "11",
+  //   name: "Chicken Karahi",
+  //   discription: "Chicken Karahi",
+  //   image:
+  //     "https://rookiewithacookie.com/wp-content/uploads/2017/01/karahi-1024x720.jpg",
+  //   price: "20.00",
+  //   category: "MAIN",
+  // },
   {
     id: "11",
-    name: "Chicken Karahi",
-    discription: "Chicken Karahi",
-    image:
-      "https://rookiewithacookie.com/wp-content/uploads/2017/01/karahi-1024x720.jpg",
-    price: "20.00",
-    category: "MAIN",
-  },
-  {
-    id: "12",
-    name: "Lamb Karahi",
+    name: "1KG Lamb Karahi",
     discription: "Lamb Karahi",
     image: "",
     price: "26.00",
     category: "MAIN",
+    subCategory: "LAMB_KARAHI",
+    subCategoryTitle: "LAMB KARAHI PER KILO",
+  },
+
+  {
+    id: "12",
+    name: "1KG Lamb Tomato Karahi",
+    discription: "Lamb Tomato Karahi",
+    image: "",
+    price: "30.00",
+    category: "MAIN",
+    subCategory: "LAMB_KARAHI",
+  },
+  {
+    id: "13",
+    name: "1KG Lamb Chilli Karahi",
+    discription: "Lamb Chilli Karahi",
+    image: "",
+    price: "30.00",
+    category: "MAIN",
+    subCategory: "LAMB_KARAHI",
+  },
+  {
+    id: "14",
+    name: "1KG Lamb Butter Karahi",
+    discription: "Lamb Butter Karahi",
+    image: "",
+    price: "30.00",
+    category: "MAIN",
+    subCategory: "LAMB_KARAHI",
+  },
+  {
+    id: "15",
+    name: "1KG Lamb Boneless Karahi",
+    discription: "Lamb Boneless Karahi",
+    image: "",
+    price: "30.00",
+    category: "MAIN",
+    subCategory: "LAMB_KARAHI",
+  },
+  {
+    id: "16",
+    name: "1KG Chicken Karahi",
+    discription: "Chicken Karahi",
+    image: "",
+    price: "20.00",
+    category: "MAIN",
+    subCategory: "CHICKEN_KARAHI",
+  },
+
+  {
+    id: "17",
+    name: "1KG Chicken Tomato Karahi",
+    discription: "Chicken Tomato Karahi",
+    image: "",
+    price: "25.00",
+    category: "MAIN",
+    subCategory: "CHICKEN_KARAHI",
+  },
+  {
+    id: "18",
+    name: "1KG Chicken Chilli Karahi",
+    discription: "Chicken Chilli Karahi",
+    image: "",
+    price: "25.00",
+    category: "MAIN",
+    subCategory: "CHICKEN_KARAHI",
+  },
+  {
+    id: "19",
+    name: "1KG Chicken Butter Karahi",
+    discription: "Chicken Butter Karahi",
+    image: "",
+    price: "25.00",
+    category: "MAIN",
+    subCategory: "CHICKEN_KARAHI",
+  },
+  {
+    id: "20",
+    name: "1KG Chicken Boneless Karahi",
+    discription: "Chicken Boneless Karahi",
+    image: "",
+    price: "25.00",
+    category: "MAIN",
+    subCategory: "CHICKEN_KARAHI",
   },
 ];
-
+export { productCategories };
 export default products;

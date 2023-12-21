@@ -125,7 +125,9 @@ h1.special {
 }
 
 .services {
+  position: relative;
   background-color: red;
+  padding: 4rem 0rem;
   color: white;
   display: flex;
   text-align: center;
@@ -342,11 +344,12 @@ input {
 
 .lahori-image {
   background-color: black;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   justify-content: space-around;
   color: white;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .lahori-image>img {
@@ -397,4 +400,125 @@ input {
   .lahori-image>img {
     margin-bottom: 2rem;
   }
+}
+
+.custom-shape-divider-top-1703116172 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1703116172 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-top-1703116172 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1703116588 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1703116588 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-bottom-1703116588 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1703116722 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1703116722 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 52px;
+}
+
+.custom-shape-divider-bottom-1703116722 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1703116812 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1703116812 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 52px;
+}
+
+.custom-shape-divider-top-1703116812 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1703116984 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1703116984 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 25px;
+}
+
+.custom-shape-divider-bottom-1703116984 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1703117042 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1703117042 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 25px;
+}
+
+.custom-shape-divider-top-1703117042 .shape-fill {
+  fill: #FFFFFF;
 }
