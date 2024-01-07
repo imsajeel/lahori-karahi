@@ -50,10 +50,23 @@ nav>li.active {
     border-radius: 2rem;
 }
 
+.sub-category-title {
+    margin: 4rem auto 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    max-width: 400px;
+    /* background-color: rgb(31, 31, 31); */
+    color: red;
+    border: 1px solid red;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
 .product-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .product {

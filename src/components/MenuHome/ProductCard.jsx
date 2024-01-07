@@ -1,9 +1,9 @@
 import React from "react";
 
 const ProductCard = ({ product }) => {
-  console.log(product);
+  // console.log(product);
   return (
-    <div key={product.id} className="product">
+    <div className="product">
       <img
         src={product.image ? product.image : "/images/image-notfound.png"}
         alt={product.name}
