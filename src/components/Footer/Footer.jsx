@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div>
           <h2>Opening Hours</h2>
-          <p>Mon-Sun: &nbsp;&nbsp;&nbsp;&nbsp; 01:00 PM - 11:30 PM</p>
+          <p>Mon-Sun: &nbsp;&nbsp;&nbsp;&nbsp; 12:00 PM - 11:30 PM</p>
         </div>
         <div>
           <h2>Usefull Links</h2>
