@@ -196,7 +196,7 @@ function App() {
           }
         />
       </div>
-      <MenuHome />
+      
       <div className="booking">
         <div className="booking-info">
           <h2 className="title">Fresh from Lahori</h2>
