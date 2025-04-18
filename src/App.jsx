@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
 import MenuHome from "./components/MenuHome/MenuHome";
+import BookingForm from "./components/BookingForm/BookingForm";
 
 function App() {
   const openInNewTab = (url) => {
@@ -226,22 +227,7 @@ function App() {
             </h1>
           </a>
         </div>
-        <div className="booking-input">
-          <h2>BOOK A TABLE</h2>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="number" placeholder="Mobile Number" />
-          <input type="number" placeholder="How Many Persons?" />
-          <input type="date" placeholder="Date" defaultValue="2023-12-18" />
-          <input
-            type="time"
-            placeholder="Time"
-            defaultValue="13:32"
-            min="13:00"
-            max="23:30"
-          />
-          <button className="secondary">Request Booking!</button>
-        </div>
+        <BookingForm />
       </div>
 
       <Footer />
