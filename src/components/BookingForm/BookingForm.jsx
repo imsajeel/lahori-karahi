@@ -64,14 +64,13 @@ const BookingForm = () => {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
-      if ((fetchedData.status = 200)) {
-        console.log(fetchedData);
-        setData();
-        setMessage({
-          type: "Success",
-          text: "Booking request has been made successfully!!",
-        });
-      }
+
+      console.log(fetchedData);
+      setData();
+      setMessage({
+        type: "Success",
+        text: "Booking request has been made successfully!!",
+      });
     } else {
       console.log("something went wrong during submision!!");
     }
