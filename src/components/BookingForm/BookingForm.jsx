@@ -96,7 +96,12 @@ const BookingForm = () => {
           {message.text}
         </div>
       )}
-      <button className="secondary" onClick={handleSubmit}>
+      <button className="secondary" onClick={()=>{
+        setMessage({
+          type: "ERROR",
+          text: "Something went wrong!! For more info or booking call on number given above!",
+        });
+      }}>
         Request Booking!
       </button>
     </div>
