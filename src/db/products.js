@@ -128,7 +128,7 @@ const products = [
             price: "3.00",
           },
           {
-            id: "12",
+            id: "14",
             name: "Samosa Chat",
             discription: "",
             image: "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
