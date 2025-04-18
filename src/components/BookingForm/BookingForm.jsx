@@ -20,7 +20,7 @@ const BookingForm = () => {
           text: "Booking date must be in future, For more info Call on number given above!",
         });
       } else {
-        fetch("https://hooks.zapier.com/hooks/catch/22569015/2xm92oe/", {
+        fetch(process.env.ZAP, {
           method: "POST",
           body: JSON.stringify(data),
           headers: {
