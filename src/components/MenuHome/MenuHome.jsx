@@ -76,8 +76,37 @@ const MenuHome = () => {
         ) : filteredProducts[0]?.data.length ? (
           filteredProducts[0]?.data.map((subCategory) => (
             <div key={subCategory.id}>
-              <div className="sub-category-title" key={subCategory.id + 2}>
+              <div
+                className="sub-category-title red-glow"
+                key={subCategory.id + 2}
+              >
                 {subCategory.subCategoryTitle.toUpperCase()}
+                {subCategory.isNew && (
+                  <b
+                    style={{
+                      background: "white",
+                      color: "red",
+                      padding: "1rem",
+                      // marginLeft: "1rem",
+                      position: "absolute",
+                      top: "0px",
+                      left: "0px",
+                    }}
+                  >
+                    NEW!
+                  </b>
+                )}
+              </div>
+              <div
+                style={{
+                  maxWidth: "500px",
+                  margin: "4rem auto",
+                  color: "gray",
+                }}
+              >
+                {subCategory.discription && (
+                  <div>{subCategory.discription}</div>
+                )}
               </div>
               <div className="product-list">
                 {subCategory.data.map((product) => (

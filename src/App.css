@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   /* width: 100vw; */
+  background: black;
+  color: white;
 }
 
 header {
@@ -17,9 +18,8 @@ header {
   padding: 2rem 2rem 0rem 2rem;
 }
 
-
 .title {
-  font-family: 'Lugrasimo';
+  font-family: "Lugrasimo";
 }
 
 .top-notice {
@@ -38,14 +38,15 @@ header {
   min-width: 140px;
 }
 
-.logo>img {
+.logo > img {
   width: 100%;
 }
 
 .menuButton {
-  border: 1px solid rgb(60, 60, 60);
+  border: 1px solid white;
   border-radius: 5px;
   padding: 0.5rem;
+  color: white;
   transition: all 300ms;
 }
 
@@ -59,11 +60,12 @@ header {
 }
 
 button {
-  background-color: white;
+  background-color: black;
   color: red;
   padding: 1rem 2rem;
   font-size: 1.1rem;
-  border: 1px solid red;
+  border: 2px solid red;
+  font-weight: 900;
   border-radius: 10px;
   transition: all 300ms;
 }
@@ -80,12 +82,19 @@ button:active {
 }
 
 button.secondary {
-  background-color: red;
-  color: white;
+  background-color: black;
+  color: red;
 }
 
+div.top-fold {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./background.jpeg");
+
+  background-position: right bottom;
+}
 div.main {
   text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,24 +103,26 @@ div.main {
   max-width: 800px;
   margin: auto;
   height: calc(100vh - 150px);
+  /* color: white; */
 }
 
-.main>h1 {
+.main > h1 {
   font-family: "Lugrasimo";
-  color: red;
-  border-bottom: 4px solid red;
+  color: white;
+  border-bottom: 4px solid white;
   margin-bottom: 0px;
 }
 
-.main>p {
-  color: rgb(136, 136, 136);
+.main > p {
+  color: rgb(210, 210, 210);
   line-height: 1.7rem;
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
 }
 
-.main>p>b {
-  color: rgb(94, 94, 94);
+.main > p > b {
+  color: rgb(255, 255, 255);
+  /* padding: auto 1rem; */
   font-weight: 900;
 }
 
@@ -143,11 +154,11 @@ h1.special {
   transition: all 300ms;
 }
 
-.service>.icon {
+.service > .icon {
   font-size: 5rem;
 }
 
-.service>.title {
+.service > .title {
   font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -163,6 +174,7 @@ h1.special {
 .speciality {
   text-align: center;
   margin: 2rem;
+  padding-bottom: 3rem;
 }
 
 .speciality-list {
@@ -172,7 +184,7 @@ h1.special {
   flex-wrap: wrap;
 }
 
-.speciality-item>img {
+.speciality-item > img {
   width: 70vw;
   height: 70vw;
   max-height: 350px;
@@ -183,23 +195,20 @@ h1.special {
   transition: all 300ms;
 }
 
-.speciality-item>img:hover {
+.speciality-item > img:hover {
   transform: scale(1.1);
 }
 
-.speciality-item>h2 {
+.speciality-item > h2 {
   margin-top: 0rem;
   margin-bottom: 3rem;
   cursor: default;
   transition: all 400ms;
 }
 
-.speciality-item>h2:hover {
+.speciality-item > h2:hover {
   color: red;
-
 }
-
-
 
 footer {
   background: rgb(60, 60, 60);
@@ -211,14 +220,11 @@ footer {
   flex-wrap: wrap;
   margin: 0rem 2rem;
   justify-content: space-around;
-
 }
 
-.footer-top>div {
-
+.footer-top > div {
   width: 300px;
   padding: 3rem 0rem;
-
 }
 
 footer li {
@@ -239,30 +245,24 @@ footer li:hover {
   flex-wrap: wrap;
   background-color: rgb(44, 44, 44);
   padding: 2rem;
-
 }
 
-.social-links>a {
+.social-links > a {
   padding: 0.6rem;
   background-color: rgb(100, 100, 100);
   margin: 5px;
   border-radius: 10%;
-
 }
 
-.social-links>a:hover {
+.social-links > a:hover {
   background-color: rgb(136, 136, 136);
 }
-
-
-
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 300;
 }
-
 
 @media only screen and (max-width: 665px) {
   .footer-top {
@@ -274,12 +274,10 @@ a {
     flex-direction: column;
   }
 
-  .footer-bottom>.social-links {
+  .footer-bottom > .social-links {
     margin: 2rem;
   }
 }
-
-
 
 .booking {
   display: flex;
@@ -308,7 +306,6 @@ a {
   transform: scale(1.05);
   border-radius: 1rem;
   /* border: 5px solid black; */
-
 }
 
 .booking-input {
@@ -320,7 +317,7 @@ a {
   max-width: 450px;
 }
 
-.booking-input>input {
+.booking-input > input {
   margin: 1rem 0rem;
 
   font-size: 1.1rem;
@@ -333,13 +330,11 @@ input[type="time"] {
   margin: 1rem auto;
 }
 
-
 input {
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid black;
   background-color: white;
-
 }
 
 .lahori-image {
@@ -352,7 +347,7 @@ input {
   position: relative;
 }
 
-.lahori-image>img {
+.lahori-image > img {
   width: 100%;
   max-width: 500px;
   /* border: 1px solid white; */
@@ -361,7 +356,7 @@ input {
   transition: all 300ms;
 }
 
-.lahori-image>img:hover {
+.lahori-image > img:hover {
   transform: scale(1.1);
 }
 
@@ -374,18 +369,18 @@ input {
   flex-wrap: wrap;
 }
 
-.delivery-homepage>img {
+.delivery-homepage > img {
   border-radius: 3rem;
   max-width: 200px;
   margin-top: 2rem;
   transition: all 300ms;
 }
 
-.delivery-homepage>img:hover {
+.delivery-homepage > img:hover {
   transform: scale(1.1);
 }
 
-.delivery-homepage>img:active {
+.delivery-homepage > img:active {
   transform: scale(1);
 }
 
@@ -397,7 +392,7 @@ input {
     align-items: center;
   }
 
-  .lahori-image>img {
+  .lahori-image > img {
     margin-bottom: 2rem;
   }
 }
@@ -419,7 +414,7 @@ input {
 }
 
 .custom-shape-divider-top-1703116172 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }
 
 .custom-shape-divider-bottom-1703116588 {
@@ -439,7 +434,7 @@ input {
 }
 
 .custom-shape-divider-bottom-1703116588 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }
 
 .custom-shape-divider-bottom-1703116722 {
@@ -459,7 +454,7 @@ input {
 }
 
 .custom-shape-divider-bottom-1703116722 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }
 
 .custom-shape-divider-top-1703116812 {
@@ -479,7 +474,7 @@ input {
 }
 
 .custom-shape-divider-top-1703116812 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }
 
 .custom-shape-divider-bottom-1703116984 {
@@ -499,7 +494,7 @@ input {
 }
 
 .custom-shape-divider-bottom-1703116984 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }
 
 .custom-shape-divider-top-1703117042 {
@@ -520,5 +515,5 @@ input {
 }
 
 .custom-shape-divider-top-1703117042 .shape-fill {
-  fill: #FFFFFF;
+  fill: black;
 }

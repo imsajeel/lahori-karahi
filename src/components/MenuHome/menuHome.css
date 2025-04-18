@@ -1,127 +1,140 @@
 .menu-homepage {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    padding: 4rem 1rem;
-    text-align: center;
-    /* background-color: rgb(44, 44, 44); */
-    background-color: black;
-    color: white;
-    /* transition: all 300ms; */
-    scroll-behavior: smooth;
-    user-select: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 4rem 1rem;
+  /* width: 100vw; */
+  text-align: center;
+  /* background-color: rgb(44, 44, 44); */
+  /* background-color: blue; */
+  color: white;
+  /* transition: all 300ms; */
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
-.menu-homepage>.title {
-    color: rgb(255, 73, 73);
+.menu-homepage > .title {
+  color: rgb(255, 73, 73);
 }
-
-
 
 nav {
-    display: flex;
-    background-color: rgb(44, 44, 44);
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 2rem;
+  display: flex;
+  background-color: rgb(44, 44, 44);
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 2rem;
 }
 
-nav>li {
-
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    list-style: none;
-    transition: all 300ms;
-    cursor: default;
-
+nav > li {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  list-style: none;
+  transition: all 300ms;
+  cursor: default;
 }
 
-nav>li:hover {
-    background-color: red;
+nav > li:hover {
+  background-color: red;
 }
 
-nav>li.active {
-    background-color: red;
+nav > li.active {
+  background-color: red;
 }
 
-.product>img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 2rem;
+.product > img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 2rem;
 }
 
 .sub-category-title {
-    margin: 4rem auto 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-    max-width: 400px;
-    /* background-color: rgb(31, 31, 31); */
-    color: red;
-    border: 1px solid red;
-    border-radius: 3rem;
-    padding: 1rem;
+  margin: 4rem auto 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  max-width: 400px;
+  /* background-color: rgb(31, 31, 31); */
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 3rem;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .product-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
-
 
 .product {
-    /* background-color: black; */
-    border: 1px solid rgb(44, 44, 44);
-    padding: 2rem;
-    border-radius: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    max-width: 300px;
-    margin: 2rem;
-    transition: all 300ms;
+  margin-top: 1rem;
+  min-width: 250px;
+  /* background-color: black; */
+  border-top: 1px solid rgb(44, 44, 44);
+  /* padding: 2rem; */
+  /* border-radius: 2rem; */
+  width: 100%;
+  /* max-width: 500px; */
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* max-width: 300px; */
+  /* margin: 2rem; */
+  transition: all 300ms;
 }
-
 
 .product:hover {
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 
-.product>h2 {
-    /* margin: 0px; */
-    margin: 1rem 0rem;
-    text-transform: uppercase;
+.product h2 {
+  /* margin: 0px; */
+  /* margin: 1rem 0rem; */
+  text-transform: uppercase;
+  display: flex;
 }
 
-.product>p.discription {
-    margin: 0px;
-    color: rgb(150, 150, 150);
-    font-size: 0.9rem;
+.product p.discription {
+  /* margin: 0px; */
+  color: rgb(150, 150, 150);
+  font-size: 0.9rem;
+  word-break: break-all;
 }
 
-.product>p.price {
-    /* margin: 0px; */
-    margin: 1rem 0rem;
-    color: rgb(255, 59, 59);
-    font-size: 1.5rem;
+.product p.price {
+  /* margin: 0px; */
+  /* margin: 1rem 0rem; */
+  /* background-color: blue; */
+  margin-left: auto;
+  min-width: 100px;
+  color: rgb(255, 59, 59);
+  font-size: 1.5rem;
 }
 
 .loading-img {
-    max-width: 300px;
-    margin: 4rem 1rem;
+  max-width: 300px;
+  margin: 4rem 1rem;
 }
 
 .no-item-found {
-    margin: 3rem 1rem;
-    color: gray;
+  margin: 3rem 1rem;
+  color: gray;
 }
 
-.no-item-found>h2 {
-    margin: 1rem 0rem;
+.no-item-found > h2 {
+  margin: 1rem 0rem;
+}
+
+.red-glow {
+  box-shadow: 0 0 0px 0px red, /* inner white */ 0 0 0px 0px red,
+    /* middle magenta */ 0 0 100px 10px rgba(255, 0, 0, 0.628); /* outer cyan */
 }

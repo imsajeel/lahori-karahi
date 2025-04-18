@@ -12,31 +12,41 @@ function App() {
 
   return (
     <div className="App">
-      <div className="top-notice">
+      {/* <div className="top-notice">
         We're adding new stuff and updating our Menu that's why you may find
         some features are not working.
-      </div>
-      <header>
-        <div className="menuButton">
-          <FiMenu size={"1.5rem"} />
+      </div> */}
+      <div className="top-fold">
+        <header>
+          <div className="menuButton">
+            <FiMenu size={"1.5rem"} />
+          </div>
+          <div className="logo">
+            <img
+              src="./images/Lahori-Logo-300x100-white.png"
+              alt="Lahori Karahi"
+            />
+          </div>
+        </header>
+        <div className="main ">
+          <h1>Welcome to Lahori</h1>
+          <p>
+            We offer food and cuisine from the city of <b>Lahore</b> in Punjab,
+            Pakistan. People from Lahore are renowned and over the country for
+            their <b>love</b> of food. Lahore is a city with an{" "}
+            <b>extremely rich food culture</b> and a vast variety of{" "}
+            <b>gastronomic delights</b>. At Lahori Karahi, our experienced chefs
+            from Lahore make sure they prepare <b>Authentic Lahori Food</b>
+          </p>
+          <a href="#menu">
+            <button
+              className="red-glow"
+              style={{ background: "red", color: "white" }}
+            >
+              Our Menu
+            </button>
+          </a>
         </div>
-        <div className="logo">
-          <img src="./images/Lahori-Logo-300x100.png" alt="Lahori Karahi" />
-        </div>
-      </header>
-      <div className="main ">
-        <h1>Welcome to Lahori</h1>
-        <p>
-          We offer food and cuisine from the city of <b>Lahore</b> in Punjab,
-          Pakistan. People from Lahore are renowned and over the country for
-          their <b>love</b> of food. Lahore is a city with an{" "}
-          <b>extremely rich food culture</b> and a vast variety of{" "}
-          <b>gastronomic delights</b>. At Lahori Karahi, our experienced chefs
-          from Lahore make sure they prepare <b>Authentic Lahori Food</b>
-        </p>
-        <a href="#menu">
-          <button>Our Menu</button>
-        </a>
       </div>
       <div className="services">
         <div className="custom-shape-divider-top-1703117042">
@@ -128,7 +138,7 @@ function App() {
           </div>
         </div>
         <a href="#menu">
-          <button className="secondary">View More</button>
+          <button className="secondary red-glow">View More</button>
         </a>
       </div>
 
@@ -156,7 +166,7 @@ function App() {
             <br />
             <br />
             <button
-              className="secondary"
+              className="secondary red-glow"
               onClick={() =>
                 openInNewTab(
                   "https://www.google.com/maps/dir//824+Stockport+Rd,+Levenshulme,+Manchester+M19+3AW/@53.4483304,-2.2744931,12z"
@@ -192,11 +202,13 @@ function App() {
           src="images/fresheats.webp"
           alt="FreshEats"
           onClick={() =>
-            openInNewTab("https://fresh-eats.co.uk/lahori-karahi-chargha")
+            openInNewTab(
+              "https://fresh-eats.co.uk/lahori-karahi-chargha-manchester"
+            )
           }
         />
       </div>
-      
+      <MenuHome />
       <div className="booking">
         <div className="booking-info">
           <h2 className="title">Fresh from Lahori</h2>

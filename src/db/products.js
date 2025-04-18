@@ -58,7 +58,7 @@ const products = [
               "Lamb Chops marinated with our special seasonings and grilled",
             image:
               "https://s23209.pcdn.co/wp-content/uploads/2023/01/121205_DD_Garlic-Rosemary-Lamb-Chops_253.jpg",
-            price: "9.00",
+            price: "10.00",
           },
           {
             id: "07",
@@ -68,6 +68,15 @@ const products = [
             image:
               "https://thewoodenskillet.com/wp-content/uploads/2021/09/grilled-chicken-wings-recipe-1.jpg",
             price: "5.00",
+          },
+          {
+            id: "071",
+            name: "Grilled Chicken Legs",
+            discription:
+              "Chicken Legs marinated with our special seasonings and grilled",
+            image:
+              "https://thewoodenskillet.com/wp-content/uploads/2021/09/grilled-chicken-wings-recipe-1.jpg",
+            price: "6.00",
           },
           {
             id: "08",
@@ -97,11 +106,33 @@ const products = [
           },
           {
             id: "11",
-            name: "Family Plater",
+            name: "Family Platter",
             discription:
               "Chicken Wings, Lamb Chops, Lamb & Chicken Tikka, Milai Boti & Seekh Kebab",
             image: "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
             price: "20.00",
+          },
+          {
+            id: "12",
+            name: "Chef's Platter",
+            discription:
+              "Chicken Legs, Chicken Wings, Lamb Chops, Lamb & Chicken Tikka, Milai Boti & Seekh Kebab",
+            image: "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
+            price: "25.00",
+          },
+          {
+            id: "13",
+            name: "Samosa (Veg | Chicken)",
+            discription: "",
+            image: "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
+            price: "3.00",
+          },
+          {
+            id: "12",
+            name: "Samosa Chat",
+            discription: "",
+            image: "https://i.ibb.co/KL2Cr7s/IMG-7103.jpg",
+            price: "5.00",
           },
         ],
       },
@@ -120,35 +151,35 @@ const products = [
           {
             id: "01",
             name: "1KG Lamb Karahi",
-            discription: "Lamb Karahi",
+
             image: "",
             price: "26.00",
           },
           {
             id: "02",
             name: "1KG Lamb Tomato Karahi",
-            discription: "Lamb Tomato Karahi",
+
             image: "",
             price: "30.00",
           },
           {
             id: "03",
             name: "1KG Lamb Chilli Karahi",
-            discription: "Lamb Chilli Karahi",
+
             image: "",
             price: "30.00",
           },
           {
             id: "04",
             name: "1KG Lamb Butter Karahi",
-            discription: "Lamb Butter Karahi",
+
             image: "",
             price: "30.00",
           },
           {
             id: "05",
             name: "1KG Lamb Boneless Karahi",
-            discription: "Lamb Boneless Karahi",
+
             image: "",
             price: "30.00",
           },
@@ -162,7 +193,7 @@ const products = [
           {
             id: "01",
             name: "1KG Chicken Karahi",
-            discription: "Chicken Karahi",
+
             image: "",
             price: "20.00",
           },
@@ -170,30 +201,58 @@ const products = [
           {
             id: "02",
             name: "1KG Chicken Tomato Karahi",
-            discription: "Chicken Tomato Karahi",
+
             image: "",
             price: "25.00",
           },
           {
             id: "03",
             name: "1KG Chicken Chilli Karahi",
-            discription: "Chicken Chilli Karahi",
+
             image: "",
             price: "25.00",
           },
           {
             id: "04",
             name: "1KG Chicken Butter Karahi",
-            discription: "Chicken Butter Karahi",
+
             image: "",
             price: "25.00",
           },
           {
             id: "05",
             name: "1KG Chicken Boneless Karahi",
-            discription: "Chicken Boneless Karahi",
+
             image: "",
             price: "25.00",
+          },
+        ],
+      },
+      {
+        id: "021",
+        subCategory: "brohi_special",
+        subCategoryTitle: "Brohi of Balochistan",
+        isNew: true,
+        discription: `White Karahi is a creamy, spice-infused
+Pakistani Brohi dish made with
+tomatoes and white pepper. It features yogurt, cream, green chilies, and black pepper, giving it a mild yet rich flavor.
+Typically prepared with chicken or lamb, it is cooked in a wok-like Balochistan style karahi, resulting in a tender, aromatic dish with a signature white
+appearance
+BROHI WHITE`,
+        data: [
+          {
+            id: "01",
+            name: "Brohi White Lamb Karhi",
+
+            image: "",
+            price: "30.00",
+          },
+          {
+            id: "02",
+            name: "Brohi White Chicken Karhi",
+
+            image: "",
+            price: "24.00",
           },
         ],
       },
@@ -228,63 +287,64 @@ const products = [
           {
             id: "01",
             name: "Lamb Karahi",
-            discription: "Lamb Karahi (on the bone)",
+
             image: "",
             price: "10.00",
           },
           {
             id: "02",
             name: "Chicken Karahi",
-            discription: "Chicken Karahi (on the bone)",
+
             image: "",
             price: "8.00",
           },
           {
             id: "03",
             name: "Chilli Chicken Karahi",
-            discription: "Chilli Chicken Karahi (boneless)",
+
             image: "",
             price: "9.00",
           },
           {
             id: "04",
             name: "Lahori Chanay",
-            discription: "Lahori Chanay",
+
             image: "",
+            isVeg: true,
             price: "6.00",
           },
           {
             id: "05",
             name: "Lamb Biryani",
-            discription: "Lamb Biryani",
+
             image: "",
             price: "9.00",
           },
           {
             id: "06",
             name: "Chicken Biryani",
-            discription: "Chicken Biryani",
+
             image: "",
             price: "8.00",
           },
           {
             id: "07",
             name: "Lamb Karahi (Large)",
-            discription: "Lamb Karahi (on the bone)",
+
             image: "",
             price: "15.00",
           },
           {
             id: "08",
             name: "Chicken Karahi (Large)",
-            discription: "Chicken Karahi (on the bone)",
+
             image: "",
             price: "12.00",
           },
           {
             id: "09",
             name: "Chilli Chicken Karahi (Large)",
-            discription: "Chilli Chicken Karahi (boneless)",
+
             image: "",
             price: "14.00",
           },
@@ -298,35 +358,35 @@ const products = [
           {
             id: "01",
             name: "Hareesa",
-            discription: "Hareesa (Portion)",
+
             image: "",
             price: "10.00",
           },
           {
             id: "02",
             name: "Haleem",
-            discription: "Haleem (Portion)",
+
             image: "",
             price: "10.00",
           },
           {
             id: "03",
             name: "Paya (Lamb)",
-            discription: "Lamb Paya (2 PCS) (Portion)",
+
             image: "",
             price: "10.00",
           },
           {
             id: "04",
             name: "Nihari",
-            discription: "Nihari  (Portion)",
+
             image: "",
             price: "10.00",
           },
           {
             id: "05",
             name: "Chinioti Kunna Gosht",
-            discription: "Chinioti Kunna Gosht (Portion) ",
+
             image: "",
             price: "15.00",
           },
@@ -340,35 +400,37 @@ const products = [
           {
             id: "01",
             name: "Aloo Gosht",
-            discription: "Potato and Lamb",
+
             image: "",
             price: "8.00",
           },
           {
             id: "02",
             name: "Daal Gosht",
-            discription: "Lentil and Lamb",
+
             image: "",
             price: "8.00",
           },
           {
             id: "03",
             name: "Aloo Keema",
-            discription: "Aloo Keema",
+
             image: "",
             price: "8.00",
           },
           {
             id: "04",
             name: "Daal Mash",
-            discription: "Daal Mash",
+            isVeg: true,
+
             image: "",
             price: "7.00",
           },
           {
             id: "05",
             name: "Mixed Vegetable",
-            discription: "Mixed Vegetable",
+            isVeg: true,
+
             image: "",
             price: "7.00",
           },
@@ -385,7 +447,60 @@ const products = [
         id: "01",
         subCategory: "SUNDRIES",
         subCategoryTitle: "SUNDRIES",
-        data: [],
+        data: [
+          {
+            id: "01",
+            name: "Roghni Kulcha",
+            price: "1.80",
+          },
+          {
+            id: "02",
+            name: "Naan",
+            price: "1.30",
+          },
+          {
+            id: "03",
+            name: "Roti",
+            price: "0.90",
+          },
+          {
+            id: "04",
+            name: "Pilau Rice",
+            price: "3.00",
+          },
+          {
+            id: "05",
+            name: "Fresh Green Salad",
+            price: "2.00",
+          },
+          {
+            id: "06",
+            name: "Raita",
+            price: "2.00",
+          },
+          {
+            id: "07",
+            name: "Chips",
+            price: "2.50",
+          },
+        ],
+      },
+      {
+        id: "02",
+        subCategory: "KIDS_MEALS",
+        subCategoryTitle: "KIDS MEALS",
+        data: [
+          {
+            id: "01",
+            name: "Fish Fingers",
+            price: "5.00",
+          },
+          {
+            id: "02",
+            name: "Chicken Nuggets",
+            price: "5.00",
+          },
+        ],
       },
     ],
   },
@@ -398,7 +513,55 @@ const products = [
         id: "01",
         subCategory: "DESSERTS",
         subCategoryTitle: "DESSERTS",
-        data: [],
+        data: [
+          {
+            id: "01",
+            name: "Kheer",
+            price: "3.00",
+          },
+          {
+            id: "02",
+            name: "Zarda",
+            price: "3.00",
+          },
+          {
+            id: "03",
+            name: "Lahori Matka",
+            price: "4.50",
+          },
+          {
+            id: "04",
+            name: "Lahori Kulfi",
+            price: "2.50",
+          },
+          {
+            id: "05",
+            name: "Paan",
+            price: "2.50",
+          },
+          {
+            id: "06",
+            name: "Panjeeri",
+            price: "7.00",
+          },
+        ],
+      },
+      {
+        id: "02",
+        subCategory: "EXTRAS",
+        subCategoryTitle: "EXTRAS",
+        data: [
+          {
+            id: "01",
+            name: "Lahori Falooda",
+            price: "4.50",
+          },
+          {
+            id: "02",
+            name: "Milk Shake",
+            price: "4.00",
+          },
+        ],
       },
     ],
   },
@@ -411,7 +574,61 @@ const products = [
         id: "01",
         subCategory: "DRINKS",
         subCategoryTitle: "DRINKS",
-        data: [],
+        data: [
+          {
+            id: "01",
+            name: "SOFT DRINKS",
+            discription: "CAN",
+            price: "2.00",
+          },
+          {
+            id: "02",
+            name: "J2O",
+            discription: "Apple, Mango, Orange or Passion Fruit",
+            price: "2.00",
+          },
+          {
+            id: "03",
+            name: "SOFT DRINKS (JUG)",
+            discription: "Coke, Diet Coke, IRN-BRU, Fanta or 7up",
+            price: "6.00",
+          },
+          {
+            id: "04",
+            name: "Lassi Jug",
+            discription: "Plain, Sweet, Salty or Mango",
+            price: "6.00",
+          },
+          {
+            id: "05",
+            name: "Lassi Glass",
+            discription: "Plain, Sweet, Salty or Mango",
+            price: "2.00",
+          },
+        ],
+      },
+
+      {
+        id: "02",
+        subCategory: "HOT_DRINKS",
+        subCategoryTitle: "HOT DRINKS",
+        data: [
+          {
+            id: "01",
+            name: "Desi Chai",
+            price: "2.50",
+          },
+          {
+            id: "02",
+            name: "Kashmiri Chai",
+            price: "2.50",
+          },
+          {
+            id: "03",
+            name: "Lahori Kahwah",
+            price: "2.50",
+          },
+        ],
       },
     ],
   },
