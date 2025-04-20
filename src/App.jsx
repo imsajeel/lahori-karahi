@@ -131,10 +131,7 @@ function App() {
             <h2>Deghi Chargha</h2>
           </div>
           <div className="speciality-item">
-            <img
-              src="https://i.pinimg.com/originals/4d/cc/f5/4dccf5ed052c5f1f6d8e626b3d82ec4e.jpg"
-              alt="fish"
-            />
+            <img src="./images/fish.jpeg" alt="fish" />
             <h2>Lahori Fish</h2>
           </div>
         </div>
