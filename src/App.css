@@ -296,6 +296,9 @@ a {
   /* align-items: center; */
 }
 
+.booking button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .booking-info {
   width: 100%;
   max-width: 400px;
