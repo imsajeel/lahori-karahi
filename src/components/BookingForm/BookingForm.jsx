@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
 const BookingForm = () => {
-  const [data, setData] = useState({
+  const initialData = {
     name: "",
     mobile: "",
     date: "",
-  });
+    time: "",
+    email: "",
+    persons: "",
+  };
+  const [data, setData] = useState(initialData);
   const [message, setMessage] = useState();
 
   const validateForm = (formData) => {
@@ -57,20 +61,28 @@ const BookingForm = () => {
     const validatedData = validateForm(data);
 
     if (validatedData !== 0) {
-      const fetchedData = await fetch(process.env.REACT_APP_ZAP, {
+      const res = await fetch(process.env.REACT_APP_ZAP, {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(validatedData),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
       });
 
-      console.log(fetchedData);
-      setData();
-      setMessage({
-        type: "Success",
-        text: "Booking request has been made successfully!!",
-      });
+      const fetchedData = await res.json();
+
+      setData(initialData);
+      if (fetchedData.status === "success") {
+        setMessage({
+          type: "Success",
+          text: "Booking request has been made successfully!!",
+        });
+      } else {
+        setMessage({
+          type: "ERROR",
+          text: "something went wrong during submision!!",
+        });
+      }
     } else {
       console.log("something went wrong during submision!!");
     }
@@ -79,7 +91,6 @@ const BookingForm = () => {
   const handleChange = (e) => {
     e.preventDefault();
     setData({ ...data, [e.target.name]: e.target.value });
-    console.log(data);
   };
 
   return (
@@ -90,24 +101,28 @@ const BookingForm = () => {
         type="text"
         placeholder="Name"
         onChange={handleChange}
+        value={data?.name}
       />
       <input
         name="email"
         type="email"
         placeholder="Email"
         onChange={handleChange}
+        value={data?.email}
       />
       <input
         name="mobile"
         type="tel"
         placeholder="Mobile Number"
         onChange={handleChange}
+        value={data?.mobile}
       />
       <input
         name="persons"
         type="number"
         placeholder="How Many Persons?"
         onChange={handleChange}
+        value={data?.persons}
       />
       <input
         name="date"
@@ -115,6 +130,7 @@ const BookingForm = () => {
         placeholder="Date"
         defaultValue="2025-05-18"
         onChange={handleChange}
+        value={data?.date}
       />
       <input
         name="time"
@@ -124,6 +140,7 @@ const BookingForm = () => {
         min="12:00"
         max="23:30"
         onChange={handleChange}
+        value={data?.time}
       />
       {message && (
         <div
